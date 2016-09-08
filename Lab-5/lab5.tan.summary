@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.831 ns
+From           : songnumber
+To             : g26_flash_read:Gate2|g26_flash_read_control:Gate1|sample_address[44]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.925 ns
+From           : g26_note_timer_board:Gate1|TRIGGER
+To             : triggerforled
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.613 ns
+From           : BPM[3]
+To             : g26_note_timer_board:Gate1|g26_tempo:Gate1|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_1p01:auto_generated|ram_block1a6~porta_address_reg5
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 66.83 MHz ( period = 14.964 ns )
+From           : lpm_rom:crc_table2|altrom:srom|altsyncram:rom_block|altsyncram_8q01:auto_generated|ram_block1a0~porta_address_reg7
+To             : g26_flash_read:Gate2|g26_flash_read_control:Gate1|sample_address[44]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

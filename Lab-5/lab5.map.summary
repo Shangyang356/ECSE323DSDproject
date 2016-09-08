@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 13 14:32:55 2015
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : lab5
+Top-level Entity Name : g26_lab5_FSM
+Family : Cyclone II
+Total logic elements : 742
+    Total combinational functions : 618
+    Dedicated logic registers : 373
+Total registers : 373
+Total pins : 64
+Total virtual pins : 0
+Total memory bits : 12,432
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

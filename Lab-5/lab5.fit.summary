@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Apr 13 14:33:13 2015
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : lab5
+Top-level Entity Name : g26_lab5_FSM
+Family : Cyclone II
+Device : EP2C20F484C7
+Timing Models : Final
+Total logic elements : 693 / 18,752 ( 4 % )
+    Total combinational functions : 618 / 18,752 ( 3 % )
+    Dedicated logic registers : 373 / 18,752 ( 2 % )
+Total registers : 373
+Total pins : 64 / 315 ( 20 % )
+Total virtual pins : 0
+Total memory bits : 12,432 / 239,616 ( 5 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

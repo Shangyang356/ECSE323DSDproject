@@ -1,0 +1,208 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=256;
+
+ADDRESS_RADIX=DEC;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0    :   7949;
+	1    :   794B;
+	[2..4]  :   7940;
+	5    :   794B;
+	6    :   79C0;
+	7    :   79D4;
+	8    :   7A4B;
+	9    :   79CB;
+	[10..11]  :   7944;
+	[12..14]  :   7949;
+	15   :   7947;
+	16   :   79C9;
+	17   :   79C0;
+	18   :   7A47;
+	19   :   79C7;
+	[20..21]  :   7944;
+	[22..24]  :   7945;
+	25   :   7944;
+	26   :   79C5;
+	27   :   79C0;
+	28   :   7A44;
+	29   :   79C4;
+	[30..31]  :   7940;
+	32   :   794B;
+	33   :   7946;
+	[34..35]  :   79C6;
+	36   :   79CB;
+	37   :   7A4B;
+	38   :   79CB;
+	39   :   7949;
+	40   :   794B;
+	41   :   79C0;
+	42   :   7940;
+	43   :   794B;
+	44   :   79C0;
+	45   :   79D4;
+	46   :   7A4B;
+	47   :   79CB;
+	[48..49]  :   7944;
+	50   :   79C9;
+	51   :   7949;
+	52   :   7947;
+	53   :   79C9;
+	54   :   79C0;
+	55   :   7A47;
+	56   :   79C7;
+	[57..58]  :   7944;
+	59   :   79C5;
+	60   :   79D0;
+	61   :   794B;
+	62   :   7950;
+	63   :   794B;
+	64   :   7950;
+	65   :   79D2;
+	66   :   79D4;
+	67   :   7A50;
+	68   :   7950;
+	69   :   794B;
+	70   :   79C9;
+	71   :   79CB;
+	72   :   79C8;
+	73   :   7A49;
+	74   :   79C9;
+	75   :   7950;
+	76   :   7952;
+	77   :   7954;
+	78   :   7952;
+	79   :   7954;
+	80   :   7952;
+	81   :   79D4;
+	82   :   79D7;
+	83   :   7A52;
+	84   :   79D2;
+	[85..86]  :   7947;
+	87   :   7950;
+	88   :   794B;
+	89   :   7950;
+	90   :   794B;
+	91   :   79D0;
+	92   :   79D4;
+	93   :   7A54;
+	94   :   7A34;
+	95   :   7949;
+	96   :   794B;
+	97   :   79D0;
+	98   :   794B;
+	99   :   7950;
+	100  :   79C2;
+	101  :   79D0;
+	102  :   79C7;
+	103  :   7A47;
+	104  :   79D5;
+	105  :   79D4;
+	106  :   79D2;
+	107  :   79D0;
+	108  :   7AD4;
+	[109..110]  :   7A54;
+	[111..112]  :   79D9;
+	[113..114]  :   79D7;
+	115  :   7954;
+	116  :   7952;
+	117  :   7A50;
+	118  :   79D0;
+	119  :   79D2;
+	120  :   79D0;
+	121  :   79D2;
+	122  :   79D7;
+	123  :   7A54;
+	[124..125]  :   79D4;
+	[126..127]  :   79D9;
+	[128..129]  :   79D7;
+	130  :   7954;
+	131  :   7952;
+	132  :   7A50;
+	133  :   79D0;
+	134  :   79D2;
+	135  :   79D0;
+	136  :   79D2;
+	137  :   79CB;
+	138  :   7A49;
+	139  :   7949;
+	140  :   794B;
+	[141..143]  :   7940;
+	144  :   794B;
+	145  :   79C0;
+	146  :   79D4;
+	147  :   7A4B;
+	148  :   79CB;
+	[149..150]  :   7944;
+	[151..153]  :   7949;
+	154  :   7947;
+	155  :   79C9;
+	156  :   79C0;
+	157  :   7A47;
+	158  :   79C7;
+	[159..160]  :   7944;
+	[161..163]  :   7945;
+	164  :   7944;
+	165  :   79C5;
+	166  :   79C0;
+	167  :   7A44;
+	168  :   79C4;
+	[169..170]  :   7940;
+	171  :   794B;
+	172  :   7946;
+	[173..174]  :   79C6;
+	175  :   79CB;
+	176  :   7A4B;
+	177  :   79CB;
+	178  :   7949;
+	179  :   794B;
+	180  :   79C0;
+	181  :   7940;
+	182  :   794B;
+	183  :   79C0;
+	184  :   79D4;
+	185  :   7A4B;
+	186  :   79CB;
+	[187..188]  :   7944;
+	189  :   79C9;
+	190  :   7949;
+	191  :   7947;
+	192  :   79C9;
+	193  :   79C0;
+	194  :   7A47;
+	195  :   79C7;
+	[196..197]  :   7944;
+	198  :   79C5;
+	199  :   79D0;
+	200  :   794B;
+	201  :   7950;
+	202  :   794B;
+	203  :   7950;
+	204  :   79D2;
+	205  :   79D4;
+	206  :   7A50;
+	207  :   7950;
+	208  :   794B;
+	209  :   79C9;
+	210  :   79CB;
+	211  :   79C8;
+	212  :   7A49;
+	213  :   F9C9;
+	[214..255]  :   8000;
+END;

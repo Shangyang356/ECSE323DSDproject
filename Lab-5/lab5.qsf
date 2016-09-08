@@ -1,0 +1,163 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+# Date created = 05:20:19  March 28, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		lab5_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY g26_lab5_FSM
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "05:20:19  MARCH 28, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE Altera_UP_Flash_Memory_Controller.vhd
+set_global_assignment -name VHDL_FILE g26_tempo.vhd
+set_global_assignment -name VHDL_FILE g26_segment_decoder.vhd
+set_global_assignment -name VHDL_FILE g26_note_timer_board.vhd
+set_global_assignment -name VHDL_FILE g26_lab5_FSM.vhd
+set_global_assignment -name VHDL_FILE g26_flash_read_control.vhd
+set_global_assignment -name VHDL_FILE g26_flash_read.vhd
+set_global_assignment -name VHDL_FILE g26_audio_interface.vhd
+set_global_assignment -name VHDL_FILE Altera_UP_Flash_Memory_User_Interface.vhd
+set_global_assignment -name VHDL_FILE Altera_UP_Flash_Memory_IP_Core_Standalone.vhd
+set_global_assignment -name MIF_FILE g26_tempo_div.mif
+set_global_assignment -name MIF_FILE g26_note_timer.mif
+set_global_assignment -name MIF_FILE g26_demo_song2.mif
+set_global_assignment -name MIF_FILE g26_demo_song.mif
+set_global_assignment -name LL_ROOT_REGION ON -entity lab5 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab5 -section_id "Root Region"
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF
+set_global_assignment -name SDC_FILE g26_lab5_FSM.sdc
+set_global_assignment -name MISC_FILE "P:/Lab-5/lab5.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_AB20 -to FL_ADDR[0]
+set_location_assignment PIN_AA14 -to FL_ADDR[1]
+set_location_assignment PIN_Y16 -to FL_ADDR[2]
+set_location_assignment PIN_R15 -to FL_ADDR[3]
+set_location_assignment PIN_T15 -to FL_ADDR[4]
+set_location_assignment PIN_U15 -to FL_ADDR[5]
+set_location_assignment PIN_V15 -to FL_ADDR[6]
+set_location_assignment PIN_W15 -to FL_ADDR[7]
+set_location_assignment PIN_R14 -to FL_ADDR[8]
+set_location_assignment PIN_Y13 -to FL_ADDR[9]
+set_location_assignment PIN_R12 -to FL_ADDR[10]
+set_location_assignment PIN_T12 -to FL_ADDR[11]
+set_location_assignment PIN_AB14 -to FL_ADDR[12]
+set_location_assignment PIN_AA13 -to FL_ADDR[13]
+set_location_assignment PIN_AB13 -to FL_ADDR[14]
+set_location_assignment PIN_AA12 -to FL_ADDR[15]
+set_location_assignment PIN_AB12 -to FL_ADDR[16]
+set_location_assignment PIN_AA20 -to FL_ADDR[17]
+set_location_assignment PIN_U14 -to FL_ADDR[18]
+set_location_assignment PIN_V14 -to FL_ADDR[19]
+set_location_assignment PIN_U13 -to FL_ADDR[20]
+set_location_assignment PIN_R13 -to FL_ADDR[21]
+set_location_assignment PIN_AB16 -to FL_DQ[0]
+set_location_assignment PIN_AA16 -to FL_DQ[1]
+set_location_assignment PIN_AB17 -to FL_DQ[2]
+set_location_assignment PIN_AA17 -to FL_DQ[3]
+set_location_assignment PIN_AB18 -to FL_DQ[4]
+set_location_assignment PIN_AA18 -to FL_DQ[5]
+set_location_assignment PIN_AB19 -to FL_DQ[6]
+set_location_assignment PIN_AA19 -to FL_DQ[7]
+set_location_assignment PIN_R20 -to triggerforled
+set_location_assignment PIN_R22 -to start
+set_location_assignment PIN_R21 -to stop
+set_location_assignment PIN_L22 -to songnumber
+set_location_assignment PIN_L21 -to shiftoctave
+set_location_assignment PIN_T22 -to reset
+set_location_assignment PIN_T21 -to INIT
+set_location_assignment PIN_M22 -to pause
+set_location_assignment PIN_V12 -to whetherloop
+set_location_assignment PIN_L1 -to clk
+set_location_assignment PIN_W12 -to BPM[0]
+set_location_assignment PIN_U12 -to BPM[1]
+set_location_assignment PIN_U11 -to BPM[2]
+set_location_assignment PIN_M2 -to BPM[3]
+set_location_assignment PIN_M1 -to BPM[4]
+set_location_assignment PIN_L2 -to BPM[5]
+set_location_assignment PIN_J2 -to segmentsofvolume[0]
+set_location_assignment PIN_J1 -to segmentsofvolume[1]
+set_location_assignment PIN_H2 -to segmentsofvolume[2]
+set_location_assignment PIN_H1 -to segmentsofvolume[3]
+set_location_assignment PIN_F2 -to segmentsofvolume[4]
+set_location_assignment PIN_F1 -to segmentsofvolume[5]
+set_location_assignment PIN_E2 -to segmentsofvolume[6]
+set_location_assignment PIN_E1 -to segmentsofoctave[0]
+set_location_assignment PIN_H6 -to segmentsofoctave[1]
+set_location_assignment PIN_H5 -to segmentsofoctave[2]
+set_location_assignment PIN_H4 -to segmentsofoctave[3]
+set_location_assignment PIN_G3 -to segmentsofoctave[4]
+set_location_assignment PIN_D2 -to segmentsofoctave[5]
+set_location_assignment PIN_D1 -to segmentsofoctave[6]
+set_location_assignment PIN_G5 -to segmentsofnotenumber[0]
+set_location_assignment PIN_G6 -to segmentsofnotenumber[1]
+set_location_assignment PIN_C2 -to segmentsofnotenumber[2]
+set_location_assignment PIN_C1 -to segmentsofnotenumber[3]
+set_location_assignment PIN_E3 -to segmentsofnotenumber[4]
+set_location_assignment PIN_E4 -to segmentsofnotenumber[5]
+set_location_assignment PIN_D3 -to segmentsofnotenumber[6]
+set_location_assignment PIN_F4 -to segmentsofnoteduration[0]
+set_location_assignment PIN_D5 -to segmentsofnoteduration[1]
+set_location_assignment PIN_D6 -to segmentsofnoteduration[2]
+set_location_assignment PIN_J4 -to segmentsofnoteduration[3]
+set_location_assignment PIN_L8 -to segmentsofnoteduration[4]
+set_location_assignment PIN_F3 -to segmentsofnoteduration[5]
+set_location_assignment PIN_D4 -to segmentsofnoteduration[6]
+set_location_assignment PIN_AB15 -to FL_CE_N
+set_location_assignment PIN_AA15 -to FL_OE_N
+set_location_assignment PIN_W14 -to FL_RST_N
+set_location_assignment PIN_Y14 -to FL_WE_N
+set_location_assignment PIN_B4 -to AUD_MCLK
+set_location_assignment PIN_A5 -to AUD_DACLRCK
+set_location_assignment PIN_B5 -to AUD_DACDAT
+set_location_assignment PIN_A4 -to AUD_BCLK
+set_location_assignment PIN_A3 -to I2C_SCLK
+set_location_assignment PIN_B3 -to I2C_SDAT
+set_global_assignment -name VHDL_FILE Slowed_Altera_UP_Flash_Memory_IP_Core_Standalone.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE lab5_FSM.vwf
+set_global_assignment -name MISC_FILE "P:/New folder (3)/Lab-5/lab5.dpf"
+set_global_assignment -name VHDL_FILE g26_lab5_FSM_simulation.vhd
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE g26_lab5_FSM_simulation2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE g26_lab5_FSM_simulation.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MIF_FILE g26_bpm_BCD.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

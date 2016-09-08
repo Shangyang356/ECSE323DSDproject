@@ -1,0 +1,51 @@
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0eb2b4fd:
+	0x00a78eab: CCL_FIO + 0x18eab (?AFC_CLSID_STW_DEFAULT_DOC@@3U_GUID@@B + 0x128b)
+	0xffffffffffffffff:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Sun Mar 29 20:04:57 2015</date>
+	<version>Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0e9cb4fd:
+	0x00a78eab: CCL_FIO + 0x18eab (?AFC_CLSID_STW_DEFAULT_DOC@@3U_GUID@@B + 0x128b)
+	0xffffffffffffffff:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Sun Mar 29 20:05:20 2015</date>
+	<version>Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0e98b4fd:
+	0x00a78eab: CCL_FIO + 0x18eab (?AFC_CLSID_STW_DEFAULT_DOC@@3U_GUID@@B + 0x128b)
+	0xffffffffffffffff:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Sun Mar 29 20:06:06 2015</date>
+	<version>Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version </full_error>
+</internal_error>
+

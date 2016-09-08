@@ -1,0 +1,90 @@
+-- The note timer circuit takes in the note duration and triplet information, 
+-- then it generates a note gate signal which goes high for the appropriate time length.
+--
+-- entity name: g26_note_timer
+--
+-- Copyright (C) 2015 Chuan Qin, Wei Wang
+-- Version 1.0
+-- Author:  Chuan Qin; chuan.qin2@mail.mcgill.ca
+--			Wei Wang; wei.wang18@mail.mcgill.ca
+-- Date: March 16, 2015
+
+library ieee; -- allows use of the std_logic_vector type
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+library lpm;
+use lpm.lpm_components.all;
+
+entity g26_note_timer_board is
+	port (	clk, reset,pause : in std_logic;
+			note_duration : in std_logic_vector(2 downto 0);
+			triplet : in std_logic;
+			bpm	  : in std_logic_vector (7 downto 0);
+			playend : in std_logic;
+			TRIGGER : out std_logic);
+end g26_note_timer_board;
+
+architecture func of g26_note_timer_board is
+
+signal count : integer range 0 to 384;
+signal temp0 : std_logic_vector(8 downto 0);
+signal temp1 : std_logic_vector(3 downto 0);
+signal tempo_enable1 : std_logic;
+
+component g26_tempo 
+	port(   bpm: in std_logic_vector(7 downto 0);
+			clk, reset: in std_logic;
+			beat: out std_logic;
+			tempo_enable: out std_logic;
+			beat_output: out std_logic_vector (4 downto 0));
+	end component;
+	
+begin
+	Gate1 :g26_tempo
+	PORT MAP (
+			bpm => bpm ,
+			clk => clk,
+			reset => reset,
+			tempo_enable => tempo_enable1
+			);
+	
+	temp1 <= triplet & note_duration;
+	
+	crc_table : lpm_rom -- use the altera rom library macrocell
+	GENERIC MAP(
+		lpm_widthad => 4, -- sets the width of the ROM address bus
+		lpm_numwords => 16, -- sets the words stored in the ROM
+		lpm_outdata => "UNREGISTERED", -- no register on the output
+		lpm_address_control => "REGISTERED", -- register on the input
+		lpm_file => "g26_note_timer.mif", -- the ascii file containing the ROM data
+		lpm_width => 9 -- the width of the word stored in each ROM location
+	)
+	PORT MAP(
+		inclock => clk,
+		address => (temp1),
+		q => temp0
+	);
+	
+	counter1 : process(clk,reset)
+	begin
+		if reset = '0' then 
+			count <= 0; 
+			TRIGGER <= '1';
+		elsif clk = '1' and clk'event then
+			if tempo_enable1 = '1' and pause ='0'  then 
+				count <=count+1;
+				if count = TO_INTEGER(unsigned(temp0))-1  then 
+					
+						count <=0;
+						TRIGGER <= '1';	
+
+				elsif count =  0 then
+					TRIGGER <= '0';
+				end if;
+			end if;
+		end if;
+	end process;
+	
+end func;

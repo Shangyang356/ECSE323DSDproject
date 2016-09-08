@@ -1,0 +1,254 @@
+Simulator report for lab5
+Sun Apr 12 05:25:47 2015
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 68 nodes     ;
+; Simulation Coverage         ;      81.33 % ;
+; Total Number of Transitions ; 231803       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                        ;
++--------------------------------------------------------------------------------------------+------------------------------+---------------+
+; Option                                                                                     ; Setting                      ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                         ;               ;
+; Vector input source                                                                        ; g26_lab5_FSM_simulation2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                           ; On            ;
+; Check outputs                                                                              ; Off                          ; Off           ;
+; Report simulation coverage                                                                 ; On                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                          ; Off           ;
+; Detect glitches                                                                            ; Off                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                         ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      81.33 % ;
+; Total nodes checked                                 ; 68           ;
+; Total output ports checked                          ; 75           ;
+; Total output ports with complete 1/0-value coverage ; 61           ;
+; Total output ports with no 1/0-value coverage       ; 12           ;
+; Total output ports with no 1-value coverage         ; 13           ;
+; Total output ports with no 0-value coverage         ; 13           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                  ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[1]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[1]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[2]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[2]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[3]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[3]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[4]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[4]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~8  ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~8  ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~8  ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~9  ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[1]~13 ; |g26_lab5_FSM_simulation|tempofaddresscounter[1]~13 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[1]~13 ; |g26_lab5_FSM_simulation|tempofaddresscounter[1]~14 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[2]~15 ; |g26_lab5_FSM_simulation|tempofaddresscounter[2]~15 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[2]~15 ; |g26_lab5_FSM_simulation|tempofaddresscounter[2]~16 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[3]~17 ; |g26_lab5_FSM_simulation|tempofaddresscounter[3]~17 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[3]~17 ; |g26_lab5_FSM_simulation|tempofaddresscounter[3]~18 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[4]~19 ; |g26_lab5_FSM_simulation|tempofaddresscounter[4]~19 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[4]~19 ; |g26_lab5_FSM_simulation|tempofaddresscounter[4]~20 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~21 ; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~21 ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop                ; |g26_lab5_FSM_simulation|whetherstop                ; regout           ;
+; |g26_lab5_FSM_simulation|one~0                      ; |g26_lab5_FSM_simulation|one~0                      ; combout          ;
+; |g26_lab5_FSM_simulation|y.WSL                      ; |g26_lab5_FSM_simulation|y.WSL                      ; regout           ;
+; |g26_lab5_FSM_simulation|y.WSH                      ; |g26_lab5_FSM_simulation|y.WSH                      ; regout           ;
+; |g26_lab5_FSM_simulation|y.WTL                      ; |g26_lab5_FSM_simulation|y.WTL                      ; regout           ;
+; |g26_lab5_FSM_simulation|y.WTH                      ; |g26_lab5_FSM_simulation|y.WTH                      ; regout           ;
+; |g26_lab5_FSM_simulation|y.WTL~0                    ; |g26_lab5_FSM_simulation|y.WTL~0                    ; combout          ;
+; |g26_lab5_FSM_simulation|y~12                       ; |g26_lab5_FSM_simulation|y~12                       ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~10 ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~10 ; combout          ;
+; |g26_lab5_FSM_simulation|tempoftrigger~0            ; |g26_lab5_FSM_simulation|tempoftrigger~0            ; combout          ;
+; |g26_lab5_FSM_simulation|LessThan0~0                ; |g26_lab5_FSM_simulation|LessThan0~0                ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~11 ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~11 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~12 ; |g26_lab5_FSM_simulation|tempofaddresscounter[0]~12 ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop~0              ; |g26_lab5_FSM_simulation|whetherstop~0              ; combout          ;
+; |g26_lab5_FSM_simulation|one~1                      ; |g26_lab5_FSM_simulation|one~1                      ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop~2              ; |g26_lab5_FSM_simulation|whetherstop~2              ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop~3              ; |g26_lab5_FSM_simulation|whetherstop~3              ; combout          ;
+; |g26_lab5_FSM_simulation|y~13                       ; |g26_lab5_FSM_simulation|y~13                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~14                       ; |g26_lab5_FSM_simulation|y~14                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~15                       ; |g26_lab5_FSM_simulation|y~15                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~16                       ; |g26_lab5_FSM_simulation|y~16                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~17                       ; |g26_lab5_FSM_simulation|y~17                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~18                       ; |g26_lab5_FSM_simulation|y~18                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~19                       ; |g26_lab5_FSM_simulation|y~19                       ; combout          ;
+; |g26_lab5_FSM_simulation|y~20                       ; |g26_lab5_FSM_simulation|y~20                       ; combout          ;
+; |g26_lab5_FSM_simulation|y.WTL~1                    ; |g26_lab5_FSM_simulation|y.WTL~1                    ; combout          ;
+; |g26_lab5_FSM_simulation|y.WTH~0                    ; |g26_lab5_FSM_simulation|y.WTH~0                    ; combout          ;
+; |g26_lab5_FSM_simulation|y.WTH~1                    ; |g26_lab5_FSM_simulation|y.WTH~1                    ; combout          ;
+; |g26_lab5_FSM_simulation|y.WSH~2                    ; |g26_lab5_FSM_simulation|y.WSH~2                    ; combout          ;
+; |g26_lab5_FSM_simulation|addresscounter[0]          ; |g26_lab5_FSM_simulation|addresscounter[0]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[1]          ; |g26_lab5_FSM_simulation|addresscounter[1]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[2]          ; |g26_lab5_FSM_simulation|addresscounter[2]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[3]          ; |g26_lab5_FSM_simulation|addresscounter[3]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[4]          ; |g26_lab5_FSM_simulation|addresscounter[4]          ; padio            ;
+; |g26_lab5_FSM_simulation|whetherpause               ; |g26_lab5_FSM_simulation|whetherpause               ; padio            ;
+; |g26_lab5_FSM_simulation|statewsl                   ; |g26_lab5_FSM_simulation|statewsl                   ; padio            ;
+; |g26_lab5_FSM_simulation|statewsh                   ; |g26_lab5_FSM_simulation|statewsh                   ; padio            ;
+; |g26_lab5_FSM_simulation|statewtl                   ; |g26_lab5_FSM_simulation|statewtl                   ; padio            ;
+; |g26_lab5_FSM_simulation|statewth                   ; |g26_lab5_FSM_simulation|statewth                   ; padio            ;
+; |g26_lab5_FSM_simulation|pause                      ; |g26_lab5_FSM_simulation|pause~corein               ; combout          ;
+; |g26_lab5_FSM_simulation|clk                        ; |g26_lab5_FSM_simulation|clk~corein                 ; combout          ;
+; |g26_lab5_FSM_simulation|trigger                    ; |g26_lab5_FSM_simulation|trigger~corein             ; combout          ;
+; |g26_lab5_FSM_simulation|start                      ; |g26_lab5_FSM_simulation|start~corein               ; combout          ;
+; |g26_lab5_FSM_simulation|stop                       ; |g26_lab5_FSM_simulation|stop~corein                ; combout          ;
+; |g26_lab5_FSM_simulation|clk~clkctrl                ; |g26_lab5_FSM_simulation|clk~clkctrl                ; outclk           ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |g26_lab5_FSM_simulation|tempofaddresscounter[5]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[5]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[7]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[7]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~21 ; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~22 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~24 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[7]~25 ; |g26_lab5_FSM_simulation|tempofaddresscounter[7]~25 ; combout          ;
+; |g26_lab5_FSM_simulation|LessThan0~1                ; |g26_lab5_FSM_simulation|LessThan0~1                ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop~1              ; |g26_lab5_FSM_simulation|whetherstop~1              ; combout          ;
+; |g26_lab5_FSM_simulation|addresscounter[5]          ; |g26_lab5_FSM_simulation|addresscounter[5]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[6]          ; |g26_lab5_FSM_simulation|addresscounter[6]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[7]          ; |g26_lab5_FSM_simulation|addresscounter[7]          ; padio            ;
+; |g26_lab5_FSM_simulation|whetherloop                ; |g26_lab5_FSM_simulation|whetherloop~corein         ; combout          ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |g26_lab5_FSM_simulation|tempofaddresscounter[5]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[5]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[7]    ; |g26_lab5_FSM_simulation|tempofaddresscounter[7]    ; regout           ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~21 ; |g26_lab5_FSM_simulation|tempofaddresscounter[5]~22 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; combout          ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~23 ; |g26_lab5_FSM_simulation|tempofaddresscounter[6]~24 ; cout             ;
+; |g26_lab5_FSM_simulation|tempofaddresscounter[7]~25 ; |g26_lab5_FSM_simulation|tempofaddresscounter[7]~25 ; combout          ;
+; |g26_lab5_FSM_simulation|LessThan0~1                ; |g26_lab5_FSM_simulation|LessThan0~1                ; combout          ;
+; |g26_lab5_FSM_simulation|whetherstop~1              ; |g26_lab5_FSM_simulation|whetherstop~1              ; combout          ;
+; |g26_lab5_FSM_simulation|addresscounter[5]          ; |g26_lab5_FSM_simulation|addresscounter[5]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[6]          ; |g26_lab5_FSM_simulation|addresscounter[6]          ; padio            ;
+; |g26_lab5_FSM_simulation|addresscounter[7]          ; |g26_lab5_FSM_simulation|addresscounter[7]          ; padio            ;
+; |g26_lab5_FSM_simulation|reset                      ; |g26_lab5_FSM_simulation|reset~corein               ; combout          ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Sun Apr 12 05:25:43 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab5 -c lab5
+Info: Using vector source file "P:/New folder (3)/Lab-5/g26_lab5_FSM_simulation2.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of g26_lab5_FSM_simulation2.vwf called lab5.sim_ori.vwf has been created in the db folder
+Info: Inverted registers were found during simulation
+    Info: Register: |g26_lab5_FSM_simulation|whetherstop
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      81.33 %
+Info: Number of transitions in simulation is 231803
+Info: Vector file g26_lab5_FSM_simulation2.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 183 megabytes
+    Info: Processing ended: Sun Apr 12 05:25:49 2015
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
+
+
